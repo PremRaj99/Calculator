@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: poppins;
+}
+
+:root{
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #b6bcbd95;
+    --background-color: #18191a;
+    --secondary-background-color: #000;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--background-color);
+}
+
+.card{
+    width: calc(37.5px * 8);
+    height: calc(81.2px * 8);
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    font-size: 2.8em;
+    box-shadow: 0px 0px 8px #353636;
+    border: 5px solid #17181a;
+    border-radius: 16px;
+}
+
+/* input section */
+
+.input-box {
+    height: 20%;
+    position: relative;
+    top: 60px;
+}
+
+.input-box textarea{
+    height: 70%;
+    width: 90%;
+    margin: 5%;
+    padding: 5%;
+    font-size: 2rem;
+    background-color: var(--secondary-background-color);
+    outline: none;
+    text-align: end;
+    color: var(--primary-text-color);
+    border-radius: 18px;
+    overflow: none;
+    resize: none;
+    box-shadow: 2px 2px 2px var(--secondary-text-color);
+}
+
+/* function button section  */
+
+.button-section{
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+    top: 60px;
+}
+
+
+/* Number section */
+
+.number-section{
+    height: 100%;
+    margin: 5px;
+}
+
+.number-button{
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    font-size: 2.5rem;
+    color: var(--primary-text-color);
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    cursor: pointer;
+    border: transparent;
+}
+
+.number-key:active{
+    background-color: var(--secondary-text-color);
+}
+
+.operator-key{
+    background-color: #F69906;
+}
+.back{
+    background-color: transparent;
+    box-shadow: none;
+    transform: scale(1.2);
+}

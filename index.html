@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+
+            <!-- input box -->
+            <div class="input-box">
+                <textarea id="result"> </textarea>
+            </div>
+
+            <div class="button-section">
+
+                <!-- number and operator key -->
+                <div class="number-section">
+                    <button class="number-button operator-key" onclick="clearResult()" style="background-color:red; font-size: 2.3rem;">AC</button>
+                    <button class="number-button operator-key" onclick="addToResult('')">()</button>
+                    <button class="number-button operator-key" onclick="addToResult('%')">%</button>
+                    <button class="number-button operator-key" onclick="addToResult('/')">/</button>
+
+                    <button class="number-button number-key" onclick="addToResult('7')">7</button>
+                    <button class="number-button number-key" onclick="addToResult('8')">8</button>
+                    <button class="number-button number-key" onclick="addToResult('9')">9</button>
+                    <button class="number-button operator-key" onclick="addToResult('*')">X</button>
+
+                    <button class="number-button number-key" onclick="addToResult('4')">4</button>
+                    <button class="number-button number-key" onclick="addToResult('5')">5</button>
+                    <button class="number-button number-key" onclick="addToResult('6')">6</button>
+                    <button class="number-button operator-key" onclick="addToResult('-')">-</button>
+
+                    <button class="number-button number-key" onclick="addToResult('1')">1</button>
+                    <button class="number-button number-key" onclick="addToResult('2')">2</button>
+                    <button class="number-button number-key" onclick="addToResult('3')">3</button>
+                    <button class="number-button operator-key" onclick="addToResult('+')">+</button>
+
+                    <button class="number-button number-key" onclick="addToResult('0')">0</button>
+                    <button class="number-button number-key" onclick="addToResult('.')">.</button>
+                    <button class="number-button operator-key back" onclick="remove()">🔙</button>
+                    <button class="number-button operator-key" onclick="calculate()" style="background-color:green;">=</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
